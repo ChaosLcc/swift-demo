@@ -8,13 +8,29 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.green], for: .selected)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.red], for: .normal)
+        
+        tabBar.tintColor = UIColor.blue
+        tabBar.unselectedItemTintColor = UIColor.red
+        
+        // 初始化子控制器
+        let homeVc = HomeViewController()
+        let homeNav = UINavigationController(rootViewController: homeVc)
+        homeVc.tabBarItem.image = R.image.home()?.withRenderingMode(.alwaysOriginal)
+        homeVc.tabBarItem.selectedImage = R.image.home_selected()?.withRenderingMode(.alwaysOriginal)
+        homeVc.tabBarItem.title = "首页"
+        addChild(homeNav)
+        
+        let mineVc = MineViewController()
+        let mineNav = UINavigationController(rootViewController: mineVc)
+        mineVc.tabBarItem.image = R.image.mine()?.withRenderingMode(.alwaysOriginal)
+        mineVc.tabBarItem.selectedImage = R.image.mine_selected()?.withRenderingMode(.alwaysOriginal)
+        mineVc.tabBarItem.title = "我的"
+        addChild(mineNav)
     }
-
-
 }
-

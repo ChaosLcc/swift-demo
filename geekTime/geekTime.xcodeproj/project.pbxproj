@@ -39,6 +39,8 @@
 		BA71806C24288C7000D64318 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA71806B24288C7000D64318 /* UIColorExtension.swift */; };
 		BA71806E2428A84400D64318 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA71806D2428A84400D64318 /* BaseViewController.swift */; };
 		BA7180702428AB1500D64318 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA71806F2428AB1500D64318 /* LoginViewController.swift */; };
+		BA88BDFD2429E33200A92715 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA88BDFC2429E33200A92715 /* HomeViewController.swift */; };
+		BA88BDFF2429E33D00A92715 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA88BDFE2429E33D00A92715 /* MineViewController.swift */; };
 		FC73B0621979D3A655E2E918 /* Pods_geekTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394BF0D231AADA181361CC95 /* Pods_geekTime.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +82,8 @@
 		BA71806B24288C7000D64318 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		BA71806D2428A84400D64318 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		BA71806F2428AB1500D64318 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BA88BDFC2429E33200A92715 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BA88BDFE2429E33D00A92715 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,12 +137,15 @@
 		BA717FF72428594B00D64318 /* geekTime */ = {
 			isa = PBXGroup;
 			children = (
+				BA88BDFB2429E24E00A92715 /* Component */,
 				BA71806A24288C5200D64318 /* Extensions */,
 				BA718063242889AA00D64318 /* Model */,
 				BA71803A242882B600D64318 /* Resource */,
 				BA717FF82428594B00D64318 /* AppDelegate.swift */,
 				BA717FFA2428594B00D64318 /* SceneDelegate.swift */,
 				BA717FFC2428594B00D64318 /* ViewController.swift */,
+				BA88BDFC2429E33200A92715 /* HomeViewController.swift */,
+				BA88BDFE2429E33D00A92715 /* MineViewController.swift */,
 				BA717FFE2428594C00D64318 /* Main.storyboard */,
 				BA7180012428594F00D64318 /* Assets.xcassets */,
 				BA7180032428594F00D64318 /* LaunchScreen.storyboard */,
@@ -191,6 +198,13 @@
 				BA71806B24288C7000D64318 /* UIColorExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BA88BDFB2429E24E00A92715 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,9 +369,11 @@
 				BA71806724288A2800D64318 /* Deal.swift in Sources */,
 				BA71806E2428A84400D64318 /* BaseViewController.swift in Sources */,
 				BA717FFB2428594B00D64318 /* SceneDelegate.swift in Sources */,
+				BA88BDFD2429E33200A92715 /* HomeViewController.swift in Sources */,
 				BA7180622428837F00D64318 /* R.generated.swift in Sources */,
 				BA7180702428AB1500D64318 /* LoginViewController.swift in Sources */,
 				BA71806924288A5500D64318 /* FakeData.swift in Sources */,
+				BA88BDFF2429E33D00A92715 /* MineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +521,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P4FRP3D7B4;
 				INFOPLIST_FILE = geekTime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -524,6 +541,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P4FRP3D7B4;
 				INFOPLIST_FILE = geekTime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
