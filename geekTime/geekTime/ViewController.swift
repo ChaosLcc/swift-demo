@@ -12,10 +12,12 @@ class ViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.green], for: .selected)
-        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.red], for: .normal)
+//        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.green], for: .selected)
+//        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.red], for: .normal)
         
         tabBar.tintColor = UIColor.blue
+        // 通过UITabBar.appearance() 点不出unselectedItemTintColor属性, 可以直接硬敲
+//        UITabBar.appearance().unselectedItemTintColor = UIColor.red
         tabBar.unselectedItemTintColor = UIColor.red
         
         // 初始化子控制器

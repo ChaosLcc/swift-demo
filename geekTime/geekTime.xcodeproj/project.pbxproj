@@ -41,6 +41,8 @@
 		BA7180702428AB1500D64318 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA71806F2428AB1500D64318 /* LoginViewController.swift */; };
 		BA88BDFD2429E33200A92715 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA88BDFC2429E33200A92715 /* HomeViewController.swift */; };
 		BA88BDFF2429E33D00A92715 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA88BDFE2429E33D00A92715 /* MineViewController.swift */; };
+		BA8C0381242AEFC500182E0D /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8C0380242AEFC500182E0D /* BannerView.swift */; };
+		BA8C0383242B044B00182E0D /* ProductList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8C0382242B044B00182E0D /* ProductList.swift */; };
 		FC73B0621979D3A655E2E918 /* Pods_geekTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394BF0D231AADA181361CC95 /* Pods_geekTime.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +86,8 @@
 		BA71806F2428AB1500D64318 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BA88BDFC2429E33200A92715 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BA88BDFE2429E33D00A92715 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		BA8C0380242AEFC500182E0D /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
+		BA8C0382242B044B00182E0D /* ProductList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +207,8 @@
 		BA88BDFB2429E24E00A92715 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				BA8C0380242AEFC500182E0D /* BannerView.swift */,
+				BA8C0382242B044B00182E0D /* ProductList.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -373,6 +379,8 @@
 				BA7180622428837F00D64318 /* R.generated.swift in Sources */,
 				BA7180702428AB1500D64318 /* LoginViewController.swift in Sources */,
 				BA71806924288A5500D64318 /* FakeData.swift in Sources */,
+				BA8C0383242B044B00182E0D /* ProductList.swift in Sources */,
+				BA8C0381242AEFC500182E0D /* BannerView.swift in Sources */,
 				BA88BDFF2429E33D00A92715 /* MineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
