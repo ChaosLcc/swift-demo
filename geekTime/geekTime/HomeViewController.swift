@@ -19,9 +19,10 @@ class HomeViewController: BaseViewController {
         bannerView.dataSource = self
         view.addSubview(bannerView)
         
-        let productList = ProductList()
+        let productList = CommonList<Product, ProductCell>()
         productList.items = FakeData.createProducts()
         view.addSubview(productList)
+        productList.delegate = self
         productList.snp.makeConstraints { (make) in
             make.left.right.bottom.equalToSuperview()
             make.top.equalTo(bannerView.snp.bottom).offset(5)
@@ -43,6 +44,18 @@ extension HomeViewController: BannerViewDataSource {
             imageView.clipsToBounds = true
             imageView.kf.setImage(with: URL(string: FakeData.createBanners()[index]))
             return imageView
+        }
+    }
+}
+// MARK:- ProductListDelegate
+extension HomeViewController: CommonListDelegate {
+    func didSelectItem<Item>(_ item: Item) {
+        if let product = item as? Product {
+            print(product)
+            let vc = DetailViewController()
+            vc.product = product
+            vc.hidesBottomBarWhenPushed = true
+            navigationController?.pushViewController(vc, animated: true)
         }
     }
 }

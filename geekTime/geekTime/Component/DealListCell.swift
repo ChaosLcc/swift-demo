@@ -1,32 +1,32 @@
 //
-//  ProductList.swift
+//  DealListCell.swift
 //  geekTime
 //
-//  Created by Liubi_Chaos_G on 2020/3/25.
+//  Created by Liubi_Chaos_G on 2020/3/27.
 //  Copyright © 2020 Liubi_Chaos_G. All rights reserved.
 //
 
 import UIKit
 import SnapKit
 
-class ProductCell: CommonListCell<Product> {
+class DealListCell: CommonListCell<Deal> {
     
-    let priceLabel: UILabel
+    let progressLabel: UILabel
     let productImageView: UIImageView
     
-    override var item: Product? {
+    override var item: Deal? {
         didSet {
             if let p = self.item {
-                self.productImageView.kf.setImage(with: URL(string: p.imageUrl))
-                self.textLabel?.text = p.name
-                self.detailTextLabel?.text = p.desc
-                self.priceLabel.text = "¥ \(p.price)"
+                self.productImageView.kf.setImage(with: URL(string: p.product.imageUrl))
+                self.textLabel?.text = p.product.name
+                self.detailTextLabel?.text = p.product.desc
+                self.progressLabel.text = "已经学习 \(p.progress)%"
             }
         }
     }
     
     required init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        priceLabel = UILabel(frame: .zero)
+        progressLabel = UILabel(frame: .zero)
         productImageView = UIImageView()
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupViews()
@@ -40,12 +40,12 @@ class ProductCell: CommonListCell<Product> {
         textLabel?.textColor = UIColor.hexColor(0x333333)
         detailTextLabel?.textColor = UIColor.hexColor(0x999999)
         detailTextLabel?.numberOfLines = 2
-        priceLabel.textColor = UIColor.hexColor(0xe23b41)
-        priceLabel.font = UIFont.systemFont(ofSize: 15)
+        progressLabel.textColor = UIColor.hexColor(0x999999)
+        progressLabel.font = UIFont.systemFont(ofSize: 15)
         productImageView.contentMode = .scaleAspectFill
         productImageView.clipsToBounds = true
         
-        contentView.addSubview(priceLabel)
+        contentView.addSubview(progressLabel)
         contentView.addSubview(productImageView)
         
         productImageView.snp.makeConstraints({ (make) in
@@ -61,7 +61,7 @@ class ProductCell: CommonListCell<Product> {
             make.right.equalTo(contentView).offset(-20)
         })
         
-        priceLabel.snp.makeConstraints { (make) in
+        progressLabel.snp.makeConstraints { (make) in
             make.left.equalTo(textLabel!)
             make.centerY.equalTo(contentView)
         }

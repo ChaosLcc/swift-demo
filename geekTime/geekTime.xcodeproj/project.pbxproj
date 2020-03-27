@@ -43,6 +43,12 @@
 		BA88BDFF2429E33D00A92715 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA88BDFE2429E33D00A92715 /* MineViewController.swift */; };
 		BA8C0381242AEFC500182E0D /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8C0380242AEFC500182E0D /* BannerView.swift */; };
 		BA8C0383242B044B00182E0D /* ProductList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8C0382242B044B00182E0D /* ProductList.swift */; };
+		BA8CEF8D242DA04800111DE8 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8CEF8C242DA04800111DE8 /* Tab.swift */; };
+		BA8CEF8F242DA77700111DE8 /* CommonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8CEF8E242DA77700111DE8 /* CommonCell.swift */; };
+		BA8CEF91242DE87E00111DE8 /* DealListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8CEF90242DE87E00111DE8 /* DealListViewController.swift */; };
+		BA8CEF93242DEB8300111DE8 /* CommonList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8CEF92242DEB8300111DE8 /* CommonList.swift */; };
+		BA8CEF95242DF79400111DE8 /* DealListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA8CEF94242DF79400111DE8 /* DealListCell.swift */; };
+		BAB59FAF242C3B0600189FB1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB59FAE242C3B0600189FB1 /* DetailViewController.swift */; };
 		FC73B0621979D3A655E2E918 /* Pods_geekTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394BF0D231AADA181361CC95 /* Pods_geekTime.framework */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +94,12 @@
 		BA88BDFE2429E33D00A92715 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		BA8C0380242AEFC500182E0D /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
 		BA8C0382242B044B00182E0D /* ProductList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductList.swift; sourceTree = "<group>"; };
+		BA8CEF8C242DA04800111DE8 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		BA8CEF8E242DA77700111DE8 /* CommonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonCell.swift; sourceTree = "<group>"; };
+		BA8CEF90242DE87E00111DE8 /* DealListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealListViewController.swift; sourceTree = "<group>"; };
+		BA8CEF92242DEB8300111DE8 /* CommonList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonList.swift; sourceTree = "<group>"; };
+		BA8CEF94242DF79400111DE8 /* DealListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealListCell.swift; sourceTree = "<group>"; };
+		BAB59FAE242C3B0600189FB1 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,7 +161,9 @@
 				BA717FFA2428594B00D64318 /* SceneDelegate.swift */,
 				BA717FFC2428594B00D64318 /* ViewController.swift */,
 				BA88BDFC2429E33200A92715 /* HomeViewController.swift */,
+				BAB59FAE242C3B0600189FB1 /* DetailViewController.swift */,
 				BA88BDFE2429E33D00A92715 /* MineViewController.swift */,
+				BA8CEF90242DE87E00111DE8 /* DealListViewController.swift */,
 				BA717FFE2428594C00D64318 /* Main.storyboard */,
 				BA7180012428594F00D64318 /* Assets.xcassets */,
 				BA7180032428594F00D64318 /* LaunchScreen.storyboard */,
@@ -209,6 +223,10 @@
 			children = (
 				BA8C0380242AEFC500182E0D /* BannerView.swift */,
 				BA8C0382242B044B00182E0D /* ProductList.swift */,
+				BA8CEF94242DF79400111DE8 /* DealListCell.swift */,
+				BA8CEF92242DEB8300111DE8 /* CommonList.swift */,
+				BA8CEF8C242DA04800111DE8 /* Tab.swift */,
+				BA8CEF8E242DA77700111DE8 /* CommonCell.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -370,17 +388,23 @@
 			files = (
 				BA717FFD2428594B00D64318 /* ViewController.swift in Sources */,
 				BA717FF92428594B00D64318 /* AppDelegate.swift in Sources */,
+				BA8CEF91242DE87E00111DE8 /* DealListViewController.swift in Sources */,
 				BA718065242889BF00D64318 /* Product.swift in Sources */,
 				BA71806C24288C7000D64318 /* UIColorExtension.swift in Sources */,
+				BA8CEF8F242DA77700111DE8 /* CommonCell.swift in Sources */,
 				BA71806724288A2800D64318 /* Deal.swift in Sources */,
 				BA71806E2428A84400D64318 /* BaseViewController.swift in Sources */,
 				BA717FFB2428594B00D64318 /* SceneDelegate.swift in Sources */,
 				BA88BDFD2429E33200A92715 /* HomeViewController.swift in Sources */,
 				BA7180622428837F00D64318 /* R.generated.swift in Sources */,
+				BA8CEF95242DF79400111DE8 /* DealListCell.swift in Sources */,
 				BA7180702428AB1500D64318 /* LoginViewController.swift in Sources */,
 				BA71806924288A5500D64318 /* FakeData.swift in Sources */,
+				BA8CEF8D242DA04800111DE8 /* Tab.swift in Sources */,
 				BA8C0383242B044B00182E0D /* ProductList.swift in Sources */,
+				BAB59FAF242C3B0600189FB1 /* DetailViewController.swift in Sources */,
 				BA8C0381242AEFC500182E0D /* BannerView.swift in Sources */,
+				BA8CEF93242DEB8300111DE8 /* CommonList.swift in Sources */,
 				BA88BDFF2429E33D00A92715 /* MineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
